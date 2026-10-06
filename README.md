@@ -32,10 +32,7 @@ rafa-imobiliaria/
 
 ## 🚀 Como executar
 
-1. Baixe ou clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/rafa-imobiliaria.git
-   ```
+1. Baixe o repositório.
 2. Abra a pasta do projeto.
 3. Dê dois cliques no arquivo `index.html` para abrir no navegador.
 
