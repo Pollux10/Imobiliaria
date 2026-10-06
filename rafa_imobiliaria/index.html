@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Rafa Imobiliária</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#inicio" class="logo">Rafa <span>Imobiliária</span></a>
+            <ul>
+                <li><a href="#imoveis">Imóveis</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" id="inicio">
+        <div class="container">
+            <h1>Encontre o lugar perfeito para chamar de lar</h1>
+            <p>Casas, apartamentos e terrenos com atendimento de confiança.</p>
+            <a href="#imoveis" class="botao">Ver imóveis</a>
+        </div>
+    </div>
+
+    <section id="imoveis">
+        <div class="container">
+            <h2>Imóveis em destaque</h2>
+            <p class="sub">Escolha uma categoria para filtrar.</p>
+            <div class="filtros" id="filtros">
+                <button class="ativo" data-tipo="Todos">Todos</button>
+                <button data-tipo="Casa">Casas</button>
+                <button data-tipo="Apartamento">Apartamentos</button>
+                <button data-tipo="Terreno">Terrenos</button>
+            </div>
+            <div class="grade" id="lista"></div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <h2>Sobre a Rafa Imobiliária</h2>
+            <p>Somos uma imobiliária que acredita que comprar ou alugar um imóvel deve ser simples. Acompanhamos você em
+                cada etapa, da primeira visita até a entrega das chaves.</p>
+            <div class="numeros">
+                <div><strong>10+</strong>anos de experiência</div>
+                <div><strong>500+</strong>famílias atendidas</div>
+                <div><strong>100%</strong>atendimento personalizado</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Fale com a gente</h2>
+            <p class="sub">Preencha o formulário e retornamos em breve.</p>
+            <form id="formulario">
+                <div><label for="nome">Nome</label><input id="nome" type="text" placeholder="Seu nome"></div>
+                <div><label for="telefone">Telefone</label><input id="telefone" type="tel"
+                        placeholder="(67) 99999-9999"></div>
+                <div><label for="interesse">Tenho interesse em</label>
+                    <select id="interesse">
+                        <option>Comprar</option>
+                        <option>Alugar</option>
+                        <option>Vender meu imóvel</option>
+                    </select>
+                </div>
+                <div><label for="mensagem">Mensagem</label><textarea id="mensagem" rows="3"
+                        placeholder="Conte o que você procura"></textarea></div>
+                <button type="submit" class="botao">Enviar mensagem</button>
+            </form>
+            <p class="msg" id="resposta" role="status"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="ano"></span> Rafa Imobiliária. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
